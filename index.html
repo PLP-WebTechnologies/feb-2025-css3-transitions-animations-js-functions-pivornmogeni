@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page with Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Welcome to My Interactive Page</h1>
+            <p class="subtitle">Experience smooth animations and persistent preferences</p>
+        </header>
+
+        <main class="main-content">
+            <div class="preferences-panel">
+                <h2>User Preferences</h2>
+                <div class="preference-option">
+                    <label for="theme">Select Theme:</label>
+                    <select id="theme" class="theme-select">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </div>
+                <div class="preference-option">
+                    <label for="animation-speed">Animation Speed:</label>
+                    <select id="animation-speed" class="speed-select">
+                        <option value="slow">Slow</option>
+                        <option value="normal">Normal</option>
+                        <option value="fast">Fast</option>
+                    </select>
+                </div>
+                <button id="save-btn" class="btn save-btn">Save Preferences</button>
+                <button id="reset-btn" class="btn reset-btn">Reset Preferences</button>
+            </div>
+
+            <div class="animation-area">
+                <h2>Animation Playground</h2>
+                <div id="animated-box" class="animated-box"></div>
+                <button id="animate-btn" class="btn animate-btn">Animate Box</button>
+                <button id="bounce-btn" class="btn bounce-btn">Bounce Box</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Your preferences are saved using localStorage</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
